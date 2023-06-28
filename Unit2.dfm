@@ -1,0 +1,174 @@
+object Form2: TForm2
+  Left = 209
+  Top = 179
+  Width = 1044
+  Height = 540
+  Caption = 'Form2'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 152
+    Top = 88
+    Width = 52
+    Height = 13
+    Caption = 'Nama Poin'
+  end
+  object Label2: TLabel
+    Left = 152
+    Top = 120
+    Width = 24
+    Height = 13
+    Caption = 'Jenis'
+  end
+  object Label3: TLabel
+    Left = 152
+    Top = 152
+    Width = 28
+    Height = 13
+    Caption = 'Bobot'
+  end
+  object Label4: TLabel
+    Left = 152
+    Top = 184
+    Width = 30
+    Height = 13
+    Caption = 'Status'
+  end
+  object Edit1: TEdit
+    Left = 240
+    Top = 80
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 240
+    Top = 112
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object c1: TComboBox
+    Left = 240
+    Top = 152
+    Width = 145
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 2
+    Items.Strings = (
+      'pelanggaran'
+      'prestasi')
+  end
+  object c2: TComboBox
+    Left = 240
+    Top = 192
+    Width = 145
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 3
+    Items.Strings = (
+      'true'
+      'false')
+  end
+  object b1: TButton
+    Left = 120
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = 'Baru'
+    TabOrder = 4
+    OnClick = b1Click
+  end
+  object b2: TButton
+    Left = 224
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = 'Simpan'
+    TabOrder = 5
+    OnClick = b2Click
+  end
+  object b3: TButton
+    Left = 320
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = 'Edit'
+    TabOrder = 6
+    OnClick = b3Click
+  end
+  object b4: TButton
+    Left = 416
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = 'Hapus'
+    TabOrder = 7
+    OnClick = b4Click
+  end
+  object b5: TButton
+    Left = 512
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = 'Batal'
+    TabOrder = 8
+    OnClick = b5Click
+  end
+  object b6: TButton
+    Left = 608
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = 'Laporan'
+    TabOrder = 9
+  end
+  object dg1: TDBGrid
+    Left = 440
+    Top = 80
+    Width = 441
+    Height = 120
+    DataSource = ds1
+    TabOrder = 10
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'db_sekolahh'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'D:\kuliah\semester 4\UAS Visual2\Uas Visual2\libmysql.dll'
+    Left = 160
+    Top = 296
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from tbl_poin')
+    Params = <>
+    Left = 216
+    Top = 288
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 280
+    Top = 296
+  end
+end
