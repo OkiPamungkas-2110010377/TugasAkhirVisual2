@@ -35,6 +35,7 @@ type
     procedure b3Click(Sender: TObject);
     procedure b5Click(Sender: TObject);
     procedure b4Click(Sender: TObject);
+    procedure dg1CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -166,6 +167,23 @@ begin
 ShowMessage('DATA BATAL DIHAPUS');
 posisiawal;
 end;
+end;
+
+procedure TForm2.dg1CellClick(Column: TColumn);
+begin
+editenable;
+b1.Enabled:= true;
+b2.Enabled:= False;
+b3.Enabled:= True;
+b4.Enabled:= True;
+b5.Enabled:= True;
+
+
+id:=zqry1.Fields[0].AsString;
+Edit1.Text:= zqry1.FieldList[1].AsString;
+Edit2.Text:= zqry1.FieldList[2].AsString;
+c1.Text:= zqry1.FieldList[3].AsString;
+c2.Text:= zqry1.FieldList[4].AsString;
 end;
 
 end.

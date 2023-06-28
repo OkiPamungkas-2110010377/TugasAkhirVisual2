@@ -23,6 +23,18 @@ object Form1: TForm1
         Caption = 'Poin'
         OnClick = Poin1Click
       end
+      object Kelas1: TMenuItem
+        Caption = 'Kelas'
+        OnClick = Kelas1Click
+      end
+      object Ortu1: TMenuItem
+        Caption = 'Ortu'
+        OnClick = Ortu1Click
+      end
+      object siswa1: TMenuItem
+        Caption = 'siswa'
+        OnClick = siswa1Click
+      end
     end
   end
 end

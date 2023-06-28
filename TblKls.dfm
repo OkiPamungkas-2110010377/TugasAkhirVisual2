@@ -1,9 +1,9 @@
-object Form2: TForm2
-  Left = 209
-  Top = 179
+object Form3: TForm3
+  Left = 256
+  Top = 177
   Width = 1044
   Height = 540
-  Caption = 'Form2'
+  Caption = 'Form3'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,35 +11,22 @@ object Form2: TForm2
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
     Left = 152
     Top = 88
-    Width = 52
+    Width = 57
     Height = 13
-    Caption = 'Nama Poin'
+    Caption = 'Nama Kelas'
   end
   object Label2: TLabel
     Left = 152
     Top = 120
-    Width = 24
+    Width = 37
     Height = 13
-    Caption = 'Jenis'
-  end
-  object Label3: TLabel
-    Left = 152
-    Top = 152
-    Width = 28
-    Height = 13
-    Caption = 'Bobot'
-  end
-  object Label4: TLabel
-    Left = 152
-    Top = 184
-    Width = 30
-    Height = 13
-    Caption = 'Status'
+    Caption = 'Jurusan'
   end
   object Edit1: TEdit
     Left = 240
@@ -48,101 +35,88 @@ object Form2: TForm2
     Height = 21
     TabOrder = 0
   end
-  object Edit2: TEdit
-    Left = 240
-    Top = 112
-    Width = 121
-    Height = 21
-    TabOrder = 1
-  end
   object c1: TComboBox
     Left = 240
-    Top = 152
+    Top = 120
     Width = 145
     Height = 21
     ItemHeight = 13
-    TabOrder = 2
+    TabOrder = 1
     Items.Strings = (
-      'pelanggaran'
-      'prestasi')
-  end
-  object c2: TComboBox
-    Left = 240
-    Top = 192
-    Width = 145
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 3
-    Items.Strings = (
-      'true'
-      'false')
+      'ipa'
+      'ips')
   end
   object b1: TButton
-    Left = 120
-    Top = 240
+    Left = 144
+    Top = 160
     Width = 75
     Height = 25
     Caption = 'Baru'
-    TabOrder = 4
+    TabOrder = 2
     OnClick = b1Click
   end
   object b2: TButton
-    Left = 224
-    Top = 240
+    Left = 248
+    Top = 160
     Width = 75
     Height = 25
     Caption = 'Simpan'
-    TabOrder = 5
+    TabOrder = 3
     OnClick = b2Click
   end
   object b3: TButton
-    Left = 320
-    Top = 240
+    Left = 344
+    Top = 160
     Width = 75
     Height = 25
     Caption = 'Edit'
-    TabOrder = 6
+    TabOrder = 4
     OnClick = b3Click
   end
   object b4: TButton
-    Left = 416
-    Top = 240
+    Left = 440
+    Top = 160
     Width = 75
     Height = 25
     Caption = 'Hapus'
-    TabOrder = 7
+    TabOrder = 5
     OnClick = b4Click
   end
   object b5: TButton
-    Left = 512
-    Top = 240
+    Left = 536
+    Top = 160
     Width = 75
     Height = 25
     Caption = 'Batal'
-    TabOrder = 8
+    TabOrder = 6
     OnClick = b5Click
   end
   object b6: TButton
-    Left = 608
-    Top = 240
+    Left = 632
+    Top = 160
     Width = 75
     Height = 25
     Caption = 'Laporan'
-    TabOrder = 9
+    TabOrder = 7
   end
   object dg1: TDBGrid
-    Left = 440
-    Top = 80
-    Width = 441
-    Height = 120
+    Left = 144
+    Top = 200
+    Width = 577
+    Height = 201
     DataSource = ds1
-    TabOrder = 10
+    TabOrder = 8
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
     OnCellClick = dg1CellClick
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 440
+    Top = 64
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -155,21 +129,16 @@ object Form2: TForm2
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\kuliah\UasVisual2\libmysql.dll'
-    Left = 160
-    Top = 296
+    Left = 496
+    Top = 64
   end
   object zqry1: TZQuery
     Connection = con1
     Active = True
     SQL.Strings = (
-      'select * from tbl_poin')
+      'select * from tbl_kls')
     Params = <>
-    Left = 216
-    Top = 288
-  end
-  object ds1: TDataSource
-    DataSet = zqry1
-    Left = 280
-    Top = 296
+    Left = 544
+    Top = 64
   end
 end

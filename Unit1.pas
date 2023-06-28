@@ -11,7 +11,13 @@ type
     MainMenu1: TMainMenu;
     f1: TMenuItem;
     Poin1: TMenuItem;
+    Kelas1: TMenuItem;
+    Ortu1: TMenuItem;
+    siswa1: TMenuItem;
     procedure Poin1Click(Sender: TObject);
+    procedure Kelas1Click(Sender: TObject);
+    procedure Ortu1Click(Sender: TObject);
+    procedure siswa1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,13 +29,28 @@ var
 
 implementation
 
-uses Unit2;
+uses Unit2, TblKls, TblOrtu, TblSiswa;
 
 {$R *.dfm}
 
 procedure TForm1.Poin1Click(Sender: TObject);
 begin
 Form2.ShowModal();
+end;
+
+procedure TForm1.Kelas1Click(Sender: TObject);
+begin
+form3.ShowModal();
+end;
+
+procedure TForm1.Ortu1Click(Sender: TObject);
+begin
+form4.ShowModal();
+end;
+
+procedure TForm1.siswa1Click(Sender: TObject);
+begin
+form5.ShowModal();
 end;
 
 end.
