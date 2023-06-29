@@ -28,7 +28,7 @@ object Form5: TForm5
     ParentFont = False
   end
   object l2: TLabel
-    Left = 88
+    Left = 80
     Top = 88
     Width = 28
     Height = 16
@@ -67,7 +67,7 @@ object Form5: TForm5
     ParentFont = False
   end
   object l5: TLabel
-    Left = 88
+    Left = 72
     Top = 176
     Width = 19
     Height = 16
@@ -93,7 +93,7 @@ object Form5: TForm5
     ParentFont = False
   end
   object l7: TLabel
-    Left = 48
+    Left = 56
     Top = 248
     Width = 92
     Height = 16

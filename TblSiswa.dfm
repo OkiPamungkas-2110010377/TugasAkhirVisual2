@@ -3,7 +3,7 @@ object Form5: TForm5
   Top = 231
   Width = 1044
   Height = 540
-  Caption = 'Form5'
+  Caption = 'Form Siswa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

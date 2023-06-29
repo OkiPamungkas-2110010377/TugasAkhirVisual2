@@ -17,6 +17,7 @@ type
     wallikelas1: TMenuItem;
     User1: TMenuItem;
     Hubungan1: TMenuItem;
+    Semester1: TMenuItem;
     procedure Poin1Click(Sender: TObject);
     procedure Kelas1Click(Sender: TObject);
     procedure Ortu1Click(Sender: TObject);
@@ -24,6 +25,7 @@ type
     procedure wallikelas1Click(Sender: TObject);
     procedure User1Click(Sender: TObject);
     procedure Hubungan1Click(Sender: TObject);
+    procedure Semester1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,7 +37,8 @@ var
 
 implementation
 
-uses Unit2, TblKls, TblOrtu, TblSiswa, TblWalikelas, TblHubungan, TblUser;
+uses Unit2, TblKls, TblOrtu, TblSiswa, TblWalikelas, TblHubungan, TblUser,
+  TblSemester;
 
 {$R *.dfm}
 
@@ -72,6 +75,11 @@ end;
 procedure TForm1.Hubungan1Click(Sender: TObject);
 begin
 form8.showmodal();
+end;
+
+procedure TForm1.Semester1Click(Sender: TObject);
+begin
+form9.showmodal();
 end;
 
 end.

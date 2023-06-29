@@ -11,6 +11,7 @@ object Form9: TForm9
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object l1: TLabel
@@ -197,6 +198,7 @@ object Form9: TForm9
     Height = 49
     Caption = 'BARU'
     TabOrder = 8
+    OnClick = b1Click
   end
   object b2: TButton
     Left = 160
@@ -205,6 +207,7 @@ object Form9: TForm9
     Height = 49
     Caption = 'SIMPAN'
     TabOrder = 9
+    OnClick = b2Click
   end
   object b3: TButton
     Left = 264
@@ -213,6 +216,7 @@ object Form9: TForm9
     Height = 49
     Caption = 'EDIT'
     TabOrder = 10
+    OnClick = b3Click
   end
   object b4: TButton
     Left = 368
@@ -221,6 +225,7 @@ object Form9: TForm9
     Height = 49
     Caption = 'HAPUS'
     TabOrder = 11
+    OnClick = b4Click
   end
   object b5: TButton
     Left = 472
@@ -229,6 +234,7 @@ object Form9: TForm9
     Height = 49
     Caption = 'BATAL'
     TabOrder = 12
+    OnClick = b5Click
   end
   object b6: TButton
     Left = 576
@@ -250,6 +256,7 @@ object Form9: TForm9
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+    OnCellClick = dg1CellClick
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
