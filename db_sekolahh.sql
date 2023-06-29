@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 29, 2023 at 05:46 PM
+-- Generation Time: Jun 29, 2023 at 06:15 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -115,6 +115,7 @@ CREATE TABLE `tbl_semester` (
   `id_siswa` int(11) NOT NULL,
   `id_poin` int(11) NOT NULL,
   `id_walikelas` int(11) NOT NULL,
+  `id_ortu` int(11) NOT NULL,
   `id_kelas` int(11) NOT NULL,
   `tanggal` date NOT NULL,
   `semester` varchar(50) NOT NULL,
@@ -125,8 +126,8 @@ CREATE TABLE `tbl_semester` (
 -- Dumping data for table `tbl_semester`
 --
 
-INSERT INTO `tbl_semester` (`id`, `id_siswa`, `id_poin`, `id_walikelas`, `id_kelas`, `tanggal`, `semester`, `status`) VALUES
-(1, 0, 0, 0, 0, '2023-06-08', '3', 'ada');
+INSERT INTO `tbl_semester` (`id`, `id_siswa`, `id_poin`, `id_walikelas`, `id_ortu`, `id_kelas`, `tanggal`, `semester`, `status`) VALUES
+(1, 0, 0, 0, 0, 0, '2023-06-08', '3', 'ada');
 
 -- --------------------------------------------------------
 
@@ -240,7 +241,8 @@ ALTER TABLE `tbl_semester`
   ADD KEY `siswa_id` (`id_siswa`),
   ADD KEY `poin_id` (`id_poin`),
   ADD KEY `wali_id` (`id_walikelas`),
-  ADD KEY `kelas_id` (`id_kelas`);
+  ADD KEY `kelas_id` (`id_kelas`),
+  ADD KEY `id_ortu` (`id_ortu`);
 
 --
 -- Indexes for table `tbl_siswa`

@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 329
-  Top = 178
+  Left = 346
+  Top = 157
   Width = 1044
   Height = 540
   Caption = 'Form Hubungan'
@@ -126,6 +126,7 @@ object Form8: TForm8
     Height = 49
     Caption = 'BARU'
     TabOrder = 5
+    OnClick = b1Click
   end
   object b2: TButton
     Left = 160
@@ -134,6 +135,7 @@ object Form8: TForm8
     Height = 49
     Caption = 'SIMPAN'
     TabOrder = 6
+    OnClick = b2Click
   end
   object b3: TButton
     Left = 264
@@ -142,6 +144,7 @@ object Form8: TForm8
     Height = 49
     Caption = 'EDIT'
     TabOrder = 7
+    OnClick = b3Click
   end
   object b4: TButton
     Left = 368
@@ -150,6 +153,7 @@ object Form8: TForm8
     Height = 49
     Caption = 'HAPUS'
     TabOrder = 8
+    OnClick = b4Click
   end
   object b5: TButton
     Left = 472
@@ -158,6 +162,7 @@ object Form8: TForm8
     Height = 49
     Caption = 'BATAL'
     TabOrder = 9
+    OnClick = b5Click
   end
   object b6: TButton
     Left = 576
@@ -179,6 +184,7 @@ object Form8: TForm8
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+    OnCellClick = dg1CellClick
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

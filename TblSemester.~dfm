@@ -1,9 +1,9 @@
 object Form9: TForm9
-  Left = 338
-  Top = 168
+  Left = 337
+  Top = 180
   Width = 1044
   Height = 540
-  Caption = 'Form9'
+  Caption = 'Form Semester'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

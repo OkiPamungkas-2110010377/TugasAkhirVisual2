@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Menus;
+  Dialogs, StdCtrls, Menus, jpeg, ExtCtrls;
 
 type
   TForm1 = class(TForm)
@@ -18,6 +18,7 @@ type
     User1: TMenuItem;
     Hubungan1: TMenuItem;
     Semester1: TMenuItem;
+    Image1: TImage;
     procedure Poin1Click(Sender: TObject);
     procedure Kelas1Click(Sender: TObject);
     procedure Ortu1Click(Sender: TObject);

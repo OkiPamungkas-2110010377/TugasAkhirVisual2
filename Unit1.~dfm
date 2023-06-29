@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 188
   Width = 1044
   Height = 540
-  Caption = 'Form1'
+  Caption = 'Menu Utama'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
