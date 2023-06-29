@@ -14,10 +14,18 @@ type
     Kelas1: TMenuItem;
     Ortu1: TMenuItem;
     siswa1: TMenuItem;
+    wallikelas1: TMenuItem;
+    User1: TMenuItem;
+    Hubungan1: TMenuItem;
+    Semester1: TMenuItem;
     procedure Poin1Click(Sender: TObject);
     procedure Kelas1Click(Sender: TObject);
     procedure Ortu1Click(Sender: TObject);
     procedure siswa1Click(Sender: TObject);
+    procedure wallikelas1Click(Sender: TObject);
+    procedure User1Click(Sender: TObject);
+    procedure Hubungan1Click(Sender: TObject);
+    procedure Semester1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,7 +37,8 @@ var
 
 implementation
 
-uses Unit2, TblKls, TblOrtu, TblSiswa;
+uses Unit2, TblKls, TblOrtu, TblSiswa, TblWalikelas, TblHubungan, TblUser,
+  TblSemester;
 
 {$R *.dfm}
 
@@ -53,4 +62,25 @@ begin
 form5.ShowModal();
 end;
 
+procedure TForm1.wallikelas1Click(Sender: TObject);
+begin
+form6.ShowModal();
+end;
+
+procedure TForm1.User1Click(Sender: TObject);
+begin
+form7.showmodal();
+end;
+
+procedure TForm1.Hubungan1Click(Sender: TObject);
+begin
+form8.showmodal();
+end;
+
+procedure TForm1.Semester1Click(Sender: TObject);
+begin
+form9.showmodal();
+end;
+
+end.
 end.

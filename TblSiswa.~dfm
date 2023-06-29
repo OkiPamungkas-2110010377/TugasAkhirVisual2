@@ -28,8 +28,8 @@ object Form5: TForm5
     ParentFont = False
   end
   object l2: TLabel
-    Left = 80
-    Top = 128
+    Left = 88
+    Top = 88
     Width = 28
     Height = 16
     Caption = 'NISN'
@@ -55,7 +55,7 @@ object Form5: TForm5
   end
   object l4: TLabel
     Left = 72
-    Top = 88
+    Top = 136
     Width = 34
     Height = 16
     Caption = 'NAMA'
@@ -67,8 +67,8 @@ object Form5: TForm5
     ParentFont = False
   end
   object l5: TLabel
-    Left = 72
-    Top = 216
+    Left = 88
+    Top = 176
     Width = 19
     Height = 16
     Caption = 'NIK'
@@ -81,7 +81,7 @@ object Form5: TForm5
   end
   object l6: TLabel
     Left = 56
-    Top = 168
+    Top = 208
     Width = 86
     Height = 16
     Caption = 'TEMPAT LAHIR'

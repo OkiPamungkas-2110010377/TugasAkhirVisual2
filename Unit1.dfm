@@ -35,6 +35,22 @@ object Form1: TForm1
         Caption = 'siswa'
         OnClick = siswa1Click
       end
+      object wallikelas1: TMenuItem
+        Caption = 'wallikelas'
+        OnClick = wallikelas1Click
+      end
+      object User1: TMenuItem
+        Caption = 'User'
+        OnClick = User1Click
+      end
+      object Hubungan1: TMenuItem
+        Caption = 'Hubungan'
+        OnClick = Hubungan1Click
+      end
+      object Semester1: TMenuItem
+        Caption = 'Semester'
+        OnClick = Semester1Click
+      end
     end
   end
 end
